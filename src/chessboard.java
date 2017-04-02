@@ -1,10 +1,8 @@
 import java.util.Random;
 
-/**
- * Created by nietz on 17-3-28.
- */
+
 public class chessboard {
-    Random rand=new Random();
+    private Random rand=new Random();
     int [][]chess=new int[9][9];
     void chessNew(){
         int x=rand.nextInt(9);
@@ -101,8 +99,8 @@ public class chessboard {
         if (chess[8][0] == 9) {
             if (chess[7][0] != 9)
                 chess[7][0]++;
-            if (chess[7][7] != 9)
-                chess[7][7]++;
+            if (chess[7][1] != 9)
+                chess[7][1]++;
             if (chess[8][1] != 9)
                 chess[8][1]++;
         }
