@@ -6,18 +6,17 @@ import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
-/**
- * Created by nietz on 17-3-28.
- */
+
 public class VisibleChess extends JFrame{
     private JButton jb1=new JButton("=_=");
     private JButton [][]chessClicked=new JButton[9][9];
-    int [][]MouseButton3Help=new  int[9][9];
-    int winHelp=0;
-    final Color colorBefore=jb1.getBackground();
-    public VisibleChess(){
+    private int [][]MouseButton3Help=new  int[9][9];
+    private int winHelp=0;
+    private final Color colorBefore=jb1.getBackground();
+    private VisibleChess(){
         chessboard game=new chessboard();
         setLayout(new BorderLayout());
+        jb1.setToolTipText("quickly");
         JPanel jp1=new JPanel();
         jp1.setPreferredSize(new Dimension(40,30));
         jp1.add(jb1);
